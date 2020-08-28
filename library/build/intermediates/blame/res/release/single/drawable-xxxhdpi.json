@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/release/drawable-xxxhdpi/ic_sort_white_24dp.png",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxxhdpi/ic_sort_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/release/drawable-xxxhdpi/ic_done_white_24dp.png",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/release/drawable-xxxhdpi/ic_search_white_24dp.png",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxxhdpi/ic_search_white_24dp.png"
+    }
+]

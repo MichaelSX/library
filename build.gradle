@@ -1,0 +1,22 @@
+buildscript {
+   repositories {
+      //previous versions
+      mavenCentral()
+      //google()
+      jcenter()
+   }
+   dependencies {
+      // previous android versions  
+      classpath 'com.android.tools.build:gradle:2.2.1'
+      //classpath 'com.android.tools.build:gradle:4.0.1'
+   }
+}
+
+allprojects {
+   repositories {
+      //previous Android versions
+      mavenCentral()
+      //google()
+      jcenter()
+   }
+}

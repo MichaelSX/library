@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/release/menu/main_menu.xml",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/release/menu/bibtex_context_menu.xml",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/menu/bibtex_context_menu.xml"
+    }
+]

@@ -1,0 +1,4 @@
+#Fri Aug 28 13:13:45 CEST 2020
+base.0=/home/marschmidt/Programming/Android/library/library/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/marschmidt/Programming/Android/library/library/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

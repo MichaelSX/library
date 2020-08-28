@@ -1,6 +1,10 @@
 Library: BibTeX on Android
 ==========================
 
+Update:
+---
+applied gradle transfer from [Coderwall-Tutorial] (https://coderwall.com/p/npki6q/migrate-existing-android-project-to-gradle)
+
 <a href="https://f-droid.org/app/com.cgogolin.library" target="_blank">
 <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80"/></a>
 <a href="https://play.google.com/store/apps/details?id=com.cgogolin.library" target="_blank">

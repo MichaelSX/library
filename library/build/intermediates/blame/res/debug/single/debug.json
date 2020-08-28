@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/layout_bibtexentry.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/layout/bibtexentry.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-hdpi_ic_sort_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-hdpi/ic_sort_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/xml_searchable.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/xml/searchable.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_done_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_search_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxhdpi/ic_search_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/layout_groupslist.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/layout/groupslist.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_done_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xhdpi_ic_search_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xhdpi/ic_search_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xhdpi_ic_done_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xhdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/menu_main_menu.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/menu/main_menu.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/layout_bibtexlist.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/layout/bibtexlist.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_search_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxxhdpi/ic_search_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_sort_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxhdpi/ic_sort_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/layout_grouplistentry.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/layout/grouplistentry.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-mdpi_ic_done_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-mdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable_cursor.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable/cursor.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/menu_bibtex_context_menu.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/menu/bibtex_context_menu.xml"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xhdpi_ic_sort_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xhdpi/ic_sort_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-mdpi_ic_sort_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-mdpi/ic_sort_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-hdpi_ic_done_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-hdpi/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-mdpi_ic_search_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-mdpi/ic_search_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_sort_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-xxxhdpi/ic_sort_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/drawable-hdpi_ic_search_white_24dp.png.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/drawable-hdpi/ic_search_white_24dp.png"
+    },
+    {
+        "merged": "/home/marschmidt/Programming/Android/library/library/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/home/marschmidt/Programming/Android/library/library/src/main/res/xml/provider_paths.xml"
+    }
+]
