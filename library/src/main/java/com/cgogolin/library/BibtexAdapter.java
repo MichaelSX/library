@@ -379,7 +379,7 @@ public class BibtexAdapter extends BaseAdapter {
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_info), context.getString(R.string.no_matches));
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_title), "");
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_authors), "");
-            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_journal), "");
+            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), "");
         }
         else
         {
@@ -432,7 +432,7 @@ public class BibtexAdapter extends BaseAdapter {
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_info), "");
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_title), entry.getTitle());
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_authors), entry.getAuthorsFormated(context));
-            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_journal), entry.getJournalFormated(context));
+            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), entry.getReadStatus());
 
             if(entry.extraInfoVisible())
                 makeExtraInfoVisible(position, convertView, context, false);

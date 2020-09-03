@@ -102,7 +102,7 @@ public class BaseBibtexEntry {
     private void generateStringBlob()
     {
         String blob = "";
-        for (String key : new String[]{"label","documenttyp","author","editor","eprint","primaryclass","doi","journal","number","pages","title","volume","month","year","archiveprefix","arxivid","keywords","mendeley-tags","url"} )
+        for (String key : new String[]{"label","documenttyp","author","editor","eprint","primaryclass","doi","journal","number","pages","title","volume","month","year","archiveprefix","arxivid","keywords","mendeley-tags","url","readstatus","rank","timestamp"} )
         {
             if (entryMap.containsKey(key))
                 blob = blob+""+key+"="+entryMap.get(key)+" ";
@@ -359,5 +359,14 @@ public class BaseBibtexEntry {
     }
     public String getYear() {
         return saveGet("year");
+    }
+    public String getReadStatus() {
+	    return saveGet("readstatus");
+    }
+    public String getRank() {
+	    return saveGet("ranking");
+    }
+    public String getTimestamp() {
+	    return saveGet("timestamp");
     }
 }
