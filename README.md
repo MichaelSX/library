@@ -3,7 +3,14 @@ Library: BibTeX on Android
 
 Update:
 ---
-applied gradle transfer from [Coderwall-Tutorial] (https://coderwall.com/p/npki6q/migrate-existing-android-project-to-gradle)
+- applied gradle transfer from [Coderwall-Tutorial](https://coderwall.com/p/npki6q/migrate-existing-android-project-to-gradle)
+- Addign further information to better integrate into existing JabRef-Work (read status, ranking, timestamp, ...)
+
+To build use `./gradlew build`
+To buid from scratch or build a release create a folder .tools and copy gradle 2.14.1 into this folder. [Generate a release key](https://stackoverflow.com/a/21020469) and run ./update.sh   
+
+Original README:
+---
 
 <a href="https://f-droid.org/app/com.cgogolin.library" target="_blank">
 <img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="80"/></a>
