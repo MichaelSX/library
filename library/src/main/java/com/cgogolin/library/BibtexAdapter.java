@@ -432,7 +432,7 @@ public class BibtexAdapter extends BaseAdapter {
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_info), "");
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_title), entry.getTitle());
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_authors), entry.getAuthorsFormated(context));
-            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), entry.getReadStatus());
+            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), "added: "+entry.getTimestamp()+", Readstatus: "+entry.getReadStatus()+", Rank: "+entry.getRank());
 
             if(entry.extraInfoVisible())
                 makeExtraInfoVisible(position, convertView, context, false);

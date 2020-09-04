@@ -33,6 +33,14 @@
 	<item android:id="@+id/menu_sort_by_title"
 	      android:title="@string/menu_sort_by_title"
 	      android:checkable="true"
+		/>
+	<item android:id="@+id/menu_sort_by_readstatus"
+	      android:title="@string/menu_sort_by_readstatus"
+	      android:checkable="true"
+	      />
+	<item android:id="@+id/menu_sort_by_rank"
+	      android:title="@string/menu_sort_by_rank"
+	      android:checkable="true"
 	      />
       </menu>
     </item>

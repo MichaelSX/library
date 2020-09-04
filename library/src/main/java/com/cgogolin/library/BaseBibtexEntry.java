@@ -361,7 +361,8 @@ public class BaseBibtexEntry {
         return saveGet("year");
     }
     public String getReadStatus() {
-	    return saveGet("readstatus");
+	    if(saveGet("readstatus")=="") return "not read";
+	    else return saveGet("readstatus");
     }
     public String getRank() {
 	    return saveGet("ranking");
