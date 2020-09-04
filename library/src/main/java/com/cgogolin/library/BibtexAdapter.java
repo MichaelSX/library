@@ -58,7 +58,7 @@ import static java.util.Arrays.fill;
 
 public class BibtexAdapter extends BaseAdapter {
     
-    public enum SortMode {None, Date, Author, Journal, Title}
+    public enum SortMode {None, Date, Author, Journal, Title, ReadStatus, Rank}
     
     private ArrayList<BibtexEntry> bibtexEntryList;
     private ArrayList<BibtexEntry> displayedBibtexEntryList;
@@ -317,7 +317,7 @@ public class BibtexAdapter extends BaseAdapter {
                 separatorComparator = new Comparator<BibtexEntry>() {
                     @Override
                     public int compare(BibtexEntry entry1, BibtexEntry entry2) {
-                        if(entry1.getTitle().length() == 0 && entry1.getTitle().length() == 0)
+                        if(entry1.getTitle().length() == 0 && entry2.getTitle().length() == 0)
                             return 0;
                         else if(entry1.getTitle().length() == 0)
                             return -1;
@@ -327,6 +327,49 @@ public class BibtexAdapter extends BaseAdapter {
                             return entry1.getTitle().substring(0,1).compareTo(entry2.getTitle().substring(0,1));
                     }
                 };
+		break;
+	    case ReadStatus:
+		Collections.sort(displayedBibtexEntryList, new Comparator<BibtexEntry>() {
+                	@Override
+                        public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                            return  (entry2.getReadStatus()+entry2.getNumberInFile()).compareTo(entry1.getReadStatus()+entry1.getNumberInFile());
+                        }
+                    });
+                separatorComparator = new Comparator<BibtexEntry>() {
+                    @Override
+                    public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                        if(entry1.getReadStatus().length() == 0 && entry2.getReadStatus().length() == 0)
+                            return 0;
+                        else if(entry1.getReadStatus().length() == 0)
+                            return -1;
+                        else if(entry2.getReadStatus().length() == 0)
+                            return 1;
+                        else                  
+                            return entry2.getReadStatus().substring(0,1).compareTo(entry1.getReadStatus().substring(0,1));
+                    }
+                };
+		break;
+	    case Rank:
+		Collections.sort(displayedBibtexEntryList, new Comparator<BibtexEntry>() {
+                	@Override
+                        public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                            return  (entry2.getRank()+entry2.getNumberInFile()).compareTo(entry1.getRank()+entry1.getNumberInFile());
+                        }
+                    });
+                separatorComparator = new Comparator<BibtexEntry>() {
+                    @Override
+                    public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                        if(entry1.getRank().length() == 0 && entry2.getRank().length() == 0)
+                            return 0;
+                        else if(entry1.getRank().length() == 0)
+                            return -1;
+                        else if(entry2.getRank().length() == 0)
+                            return 1;
+                        else                  
+                            return entry2.getRank().substring(0,1).compareTo(entry1.getRank().substring(0,1));
+                    }
+                };
+		break;
 
         }
         sortingAccordingTo = null;
