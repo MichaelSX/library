@@ -42,6 +42,7 @@
     <string name="menu_sort_by_title">Sort by title</string>
     <string name="menu_sort_by_readstatus">Sort by Readstatus</string>
     <string name="menu_sort_by_rank">Sort by rank</string>
+    <string name="menu_sort_by_added">Sort by Date added</string>
     <string name="no_matches">No matches</string>
     <string name="pick_bibtex_library">Pick BibTeX file</string>
     <string name="exception_while_loading_library">Exception while loading the BibTeX library file: </string>

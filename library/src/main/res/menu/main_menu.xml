@@ -42,6 +42,10 @@
 	      android:title="@string/menu_sort_by_rank"
 	      android:checkable="true"
 	      />
+	<item android:id="@+id/menu_sort_by_added"
+	      android:title="@string/menu_sort_by_added"
+	      android:checkable="true"
+	      />
       </menu>
     </item>
         <item
