@@ -58,7 +58,7 @@ import static java.util.Arrays.fill;
 
 public class BibtexAdapter extends BaseAdapter {
     
-    public enum SortMode {None, Date, Author, Journal, Title, ReadStatus, Rank}
+    public enum SortMode {None, Date, Author, Journal, Title, ReadStatus, Rank, Added}
     
     private ArrayList<BibtexEntry> bibtexEntryList;
     private ArrayList<BibtexEntry> displayedBibtexEntryList;
@@ -350,27 +350,40 @@ public class BibtexAdapter extends BaseAdapter {
                 };
 		break;
 	    case Rank:
-		Collections.sort(displayedBibtexEntryList, new Comparator<BibtexEntry>() {
-                	@Override
-                        public int compare(BibtexEntry entry1, BibtexEntry entry2) {
-                            return  (entry2.getRank()+entry2.getNumberInFile()).compareTo(entry1.getRank()+entry1.getNumberInFile());
-                        }
-                    });
+		    Collections.sort(displayedBibtexEntryList, new Comparator<BibtexEntry>() {
+                @Override
+                public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                    return  (entry2.getRank()+entry2.getNumberInFile()).compareTo(entry1.getRank()+entry1.getNumberInFile());
+                }
+            });
+            separatorComparator = new Comparator<BibtexEntry>() {
+                @Override
+                public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                    if(entry1.getRank().length() == 0 && entry2.getRank().length() == 0)
+                        return 0;
+                    else if(entry1.getRank().length() == 0)
+                        return -1;
+                    else if(entry2.getRank().length() == 0)
+                        return 1;
+                    else                  
+                       return entry2.getRank().substring(0,1).compareTo(entry1.getRank().substring(0,1));
+                    }
+                };
+		    break;
+	    case Added:
+		    Collections.sort(displayedBibtexEntryList, new Comparator<BibtexEntry>() {
+                @Override
+                    public int compare(BibtexEntry entry1, BibtexEntry entry2) {
+                        return  (entry2.getTimestamp()+entry2.getNumberInFile()).compareTo(entry1.getTimestamp()+entry1.getNumberInFile());
+                    }
+                });
                 separatorComparator = new Comparator<BibtexEntry>() {
                     @Override
                     public int compare(BibtexEntry entry1, BibtexEntry entry2) {
-                        if(entry1.getRank().length() == 0 && entry2.getRank().length() == 0)
-                            return 0;
-                        else if(entry1.getRank().length() == 0)
-                            return -1;
-                        else if(entry2.getRank().length() == 0)
-                            return 1;
-                        else                  
-                            return entry2.getRank().substring(0,1).compareTo(entry1.getRank().substring(0,1));
+                            return entry2.getTimestamp().compareTo(entry1.getTimestamp());
                     }
                 };
-		break;
-
+		    break;
         }
         sortingAccordingTo = null;
         sortedAccordingTo = sortMode;
@@ -475,7 +488,11 @@ public class BibtexAdapter extends BaseAdapter {
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_info), "");
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_title), entry.getTitle());
             setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_authors), entry.getAuthorsFormated(context));
-            setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), "added: "+entry.getTimestamp()+", Readstatus: "+entry.getReadStatus()+", Rank: "+entry.getRank());
+            if(entry.getTimestamp()=="1970-01-01")
+                setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), "Readstatus: "+entry.getReadStatus()+", Rank: "+entry.getRank());
+            else
+                setTextViewAppearance((TextView)convertView.findViewById(R.id.bibtex_infocons), "added: "+entry.getTimestamp()+", Readstatus: "+entry.getReadStatus()+", Rank: "+entry.getRank());
+
 
             if(entry.extraInfoVisible())
                 makeExtraInfoVisible(position, convertView, context, false);

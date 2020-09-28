@@ -368,6 +368,7 @@ public class BaseBibtexEntry {
 	    return saveGet("ranking");
     }
     public String getTimestamp() {
+        if(saveGet("timestamp")=="") return "1970-01-01";
 	    return saveGet("timestamp");
     }
 }

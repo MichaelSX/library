@@ -273,13 +273,18 @@ public class Library extends AppCompatActivity implements SearchView.OnQueryText
                 sortInBackground(sortMode);
                 break;
 	    case R.id.menu_sort_by_readstatus:
-		sortMode = BibtexAdapter.SortMode.ReadStatus;
-		sortInBackground(sortMode);
+		    sortMode = BibtexAdapter.SortMode.ReadStatus;
+		    sortInBackground(sortMode);
 		break;
 	    case R.id.menu_sort_by_rank:
-		sortMode = BibtexAdapter.SortMode.Rank;
-		sortInBackground(sortMode);
+		    sortMode = BibtexAdapter.SortMode.Rank;
+		    sortInBackground(sortMode);
 		break;
+        case R.id.menu_sort_by_added:
+		    sortMode = BibtexAdapter.SortMode.Added;
+		    sortInBackground(sortMode);
+		break;
+
             case R.id.menu_groups:
                 Intent intent = new Intent(this, GroupsActivity.class);
                 intent.putExtra("group list", new ArrayList(bibtexAdapter.getGroups()));
